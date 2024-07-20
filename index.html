@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Motorcycle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0
+,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container1"> 
+        <div class="logo">
+            <img src="./ToKada Images/Logo.png" alt="logo">
+        </div>
+        <div class="nav-items">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="./ToKada Images/Flag_of_Nigeria.png" height="100px" width="200px" alt="Language">
+               <span class="arrow-down"></span>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href = "#"><img src="ToKada Images/Flag_of_Nigeria.png" height="100px" width="200px" alt="Nigeria">English</a>
+                    
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">₦<span class="arrow-down"></span></button>
+                <div class="dropdown-content">
+                    <a href="#">₦ Naira</a>
+                    <a href="#">€ Euro</a>
+                    <a href="#">$ USD</a>
+                </div>
+            </div>
+
+            <div class="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="content">
+
+
+
+
+
+        <div class="container">
+        <div class="header">
+            <h1>Rent a motorcycle anywhere in Nigeria</h1>
+        </div>
+        <form class="rental-form">
+            <div class="input-group">
+                <label for="start-date"> Start Date</label>
+                <input type="date" id="start-date" name="start-date" required>
+            </div>
+            <div class="input-group">
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" name="end-date" required>
+            </div>
+            <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City">
+            </div>
+            <div class="input-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                <option value="all">All</option>
+            </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+
+
+    
+        <h1>Motorcycles for Rent</h1>
+
+       
+
+        <script src="script.js"></script>
+
+</body>
+</html>
