@@ -1,91 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent a Motorcycle</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TO-KADA HIRE PURCHASE WEBSITE</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,
     wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0
-,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<body>
-    <nav class="navbar">
-        <div class="container1"> 
-        <div class="logo">
-            <img src="./ToKada Images/Logo.png" alt="logo">
-        </div>
-        <div class="nav-items">
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <img src="./ToKada Images/Flag_of_Nigeria.png" height="100px" width="200px" alt="Language">
-               <span class="arrow-down"></span>
-                </button>
+	<body>
+		<nav class="navbar">
+			<div class="container1">
+				<div class="logo">
+					<img src="./ToKada Images/Logo.png" alt="logo" />
+				</div>
+			</div>
 
-                <div class="dropdown-content">
-                    <a href = "#"><img src="ToKada Images/Flag_of_Nigeria.png" height="100px" width="200px" alt="Nigeria">English</a>
-                    
-                </div>
-            </div>
+			<!-- <div class="sidebar">
+				<ul>
+					<li><a href="#">Motorcycle Guides</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Manage Booking</a></li>
+				</ul>
+			</div> -->
+		</nav>
 
-            <div class="dropdown">
-                <button class="dropbtn">₦<span class="arrow-down"></span></button>
-                <div class="dropdown-content">
-                    <a href="#">₦ Naira</a>
-                    <a href="#">€ Euro</a>
-                    <a href="#">$ USD</a>
-                </div>
-            </div>
+		<!-- Slider Menu -->
 
-            <div class="menu-icon">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-        </div>
-    </nav>
-    <div class="content">
+		<div class="content">
+			<div class="container">
+				<div class="header">
+					<h1>HIRE A MOTORCYCLE WITHIN NIGERIA</h1>
+				</div>
+				<form class="rental-form">
+					<div class="input-group">
+						<label for="start-date"> Start Date</label>
+						<input type="date" id="start-date" name="start-date" required />
+					</div>
+					<div class="input-group">
+						<label for="end-date">End Date</label>
+						<input type="date" id="end-date" name="end-date" required />
+					</div>
+					<div class="input-group">
+						<label for="city">City</label>
+						<input type="text" id="city" name="city" placeholder="City" />
+					</div>
+					<div class="input-group">
+						<label for="category">Category:</label>
+						<select id="category" name="category">
+							<option value="all">All</option>
+						</select>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
 
+		<div class="hire">
+			<h1>Motorcycles for Hire Purchase</h1>
+		</div>
 
+		<div class="slider">
+			<div class="slider-track">
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha Engine.jpg" width="200px" />
+					<p>POWERFULL ENGINE</p>
+				</div>
 
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha Seat.jpeg" width="200px" />
+					<p>WIDER SEAT</p>
+				</div>
 
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha head light.jpg" width="200px" />
+					<p>HIGH GRADE HEADLIGHT</p>
+				</div>
 
-        <div class="container">
-        <div class="header">
-            <h1>Rent a motorcycle anywhere in Nigeria</h1>
-        </div>
-        <form class="rental-form">
-            <div class="input-group">
-                <label for="start-date"> Start Date</label>
-                <input type="date" id="start-date" name="start-date" required>
-            </div>
-            <div class="input-group">
-                <label for="end-date">End Date</label>
-                <input type="date" id="end-date" name="end-date" required>
-            </div>
-            <div class="input-group">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" placeholder="City">
-            </div>
-            <div class="input-group">
-                <label for="category">Category:</label>
-                <select id="category" name="category">
-                <option value="all">All</option>
-            </select>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-        </div>
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha wider foot rest.jpg" width="200px" />
+					<p>WIDER FOOTREST</p>
+				</div>
 
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha tank cover.jpg" width="200px" />
+					<p>PLASTIC TANK COVER</p>
+				</div>
 
-    
-        <h1>Motorcycles for Rent</h1>
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha Engine.jpg" width="200px" />
+					<p>POWERFULL ENGINE</p>
+				</div>
 
-       
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha Seat.jpeg" width="200px" />
+					<p>WIDER SEAT</p>
+				</div>
 
-        <script src="script.js"></script>
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha head light.jpg" width="200px" />
+					<p>HIGH GRADE HEADLIGHT</p>
+				</div>
 
-</body>
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha wider foot rest.jpg" width="200px" />
+					<p>WIDER FOOTREST</p>
+				</div>
+
+				<div class="image-item">
+					<img src="ToKada Images/Yamaha tank cover.jpg" width="200px" />
+					<p>PLASTIC TANK COVER</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="info-item">
+			<div class="icon">
+				<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			</div>
+
+			<div class="about">
+				<h1>About To-kada</h1>
+				<p>
+					To-KADA BUSINES SOLUTION has dedicated it's career to revolutionizing
+					motorcycle ownership in Nigeria, To-Kada has successfully bridged the
+					gap between dream and reality for many aspiring riders. It has become
+					a trusted name known for its flexible hire purchase plans and
+					commitment to customer satisfaction. To-kada innovative approach and
+					unwavering dedication continue to drive the company's success and
+					inspire a growing community of motorcycle enthusiasts across the
+					nation.
+				</p>
+			</div>
+		</div>
+
+		<div class="info-item">
+			<div class="icon">
+				<i class="fa fa-handshake-o" aria-hidden="true"></i>
+			</div>
+
+			<div class="about">
+				<h1>Hire At The Best Offer</h1>
+				<p>
+					At To-Kada Business Solution, our hire purchase plan make it simple
+					and affordable for you to become a motorcycle owner. With low initial
+					payments, flexible terms, and exceptional customer service, we are
+					dedicated to helping you hit the road with confidence. Discover the
+					freedom and convenience of our hire purchase options today, and join
+					the many satisfied customers who have made their dreams a reality with
+					us.
+				</p>
+			</div>
+		</div>
+
+		<div class="ride">
+			<h2>Enjoy The Ride</h2>
+			<p><i class="fa fa-check" aria-hidden="true"></i>Price match quarantee</p>
+			<p>
+				<i class="fa fa-check" aria-hidden="true"></i>No exhorbitant charges
+			</p>
+			<p>
+				<i class="fa fa-check" aria-hidden="true"></i>Online payment management
+			</p>
+			<p><i class="fa fa-check" aria-hidden="true"></i>24/7 customer service</p>
+		</div>
+		<h1>Top Hire Destination</h1>
+
+		<div class="carousel">
+			<div class="card">
+				<img
+					src="ToKada Images/Ibadan.jpeg"
+					alt="Tokada Image"
+					height="270px"
+					width="auto"
+				/>
+				<div class="info">
+					<h2>Oyo State</h2>
+					<p>Ibadan</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img
+					src="ToKada Images/Ogun.jpg"
+					alt="Tokada Image"
+					height="270px"
+					width="auto"
+				/>
+				<div class="info">
+					<h2>Osun State</h2>
+					<p>Osogbo</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<img
+					src="ToKada Images/Osun.jpg"
+					alt="Tokada Image"
+					height="270px"
+					width="auto"
+				/>
+				<div class="info">
+					<h2>Osun State</h2>
+					<p>Ilesha</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="see">
+			<h1>See For Yourself</h1>
+		</div>
+
+		<section class="tokada-container">
+			<div class="tokada-wrapper">
+				<div class="tokada">
+					<img
+						id="slide-1"
+						src="./ToKada Images/To-kada 2.jpeg"
+						alt="Tokada images"
+					/>
+					<img
+						id="slide-2"
+						src="./ToKada Images/To-kada 1.jpeg"
+						alt="Tokada images"
+					/>
+					<img
+						id="slide-3"
+						src="./ToKada Images/Stephen.jpeg"
+						alt="Tokada image"
+					/>
+					<img
+						id="slide-4"
+						src="./ToKada Images/Picture1 (1).jpeg"
+						alt="Tokada images"
+					/>
+					<img
+						id="slide-5"
+						src="./ToKada Images/Picture1 (2).jpeg"
+						alt="Tokada images"
+					/>
+					<img
+						id="slide-6"
+						src="./ToKada Images/Picture1 (3).jpeg"
+						alt="Tokada images"
+					/>
+					<img
+						id="slide-7"
+						src="./ToKada Images/Kingsley.jpeg"
+						alt="Tokada images"
+					/>
+					<img
+						id="slide-8"
+						src="./ToKada Images/To-kada 2.jpeg"
+						alt="Tokada images"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Chat GPT -->
+
+		<div class="testimonial-section">
+			<div class="testimonial-container">
+				<div class="heading">
+					<h3>Testimonials</h3>
+					<h1>Hear it from them</h1>
+				</div>
+				<div class="testimonial-slider">
+					<div class="slides">
+						<div class="slide">
+							<div class="stars">★★★★★</div>
+							<p class="review">
+								Hiring a motorcycle from TO_KADA was an absolute breeze. The
+								booking process was straightforward, and the staff were
+								incredibly helpful. The bike was in pristine condition, and the
+								entire experience was hassle-free. I highly recommend TO_KADA
+								for anyone looking to rent a motorcycle.
+							</p>
+							<p class="author">
+								<strong>Oluseyi Adenuga</strong><br />3 December 2023
+							</p>
+						</div>
+						<div class="slide">
+							<div class="stars">★★★★★</div>
+							<p class="review">
+								TO_KADA Hire Purchase Company exceeded my expectations. The
+								motorcycle was well-maintained and ran smoothly throughout my
+								trip. The customer service team was responsive and friendly,
+								making the whole process enjoyable. I will definitely use their
+								services again.
+							</p>
+							<p class="author">
+								<strong>Chukwudi Odinaka</strong><br />25 March 2024
+							</p>
+						</div>
+						<div class="slide">
+							<div class="stars">★★★★★</div>
+							<p class="review">
+								I've rented motorcycles from various companies, but TO-KADA
+								stands out for its exceptional service and quality. The
+								motorcycle was reliable and comfortable, and the rental rates
+								were very reasonable. The team was professional and made sure
+								all my needs were met. Highly recommended!
+							</p>
+							<p class="author">
+								<strong>Alhaji Mohammed</strong><br />8 April 2024
+							</p>
+						</div>
+						<div class="slide">
+							<div class="stars">★★★★★</div>
+							<p class="review">
+								My experience with TO-KADA Hire Purchase Company was fantastic.
+								From the easy booking process to the excellent condition of the
+								motorcycle, everything was perfect. The staff was knowledgeable
+								and gave me great tips for my journey. I couldn't have asked for
+								a better experience.
+							</p>
+							<p class="author">
+								<strong>John Kennedy</strong><br />14 June 2024
+							</p>
+						</div>
+						<div class="slide">
+							<div class="stars">★★★★★</div>
+							<p class="review">
+								TO-KADA is my go-to company for motorcycle rentals. The entire
+								process, from booking to returning the bike, was seamless. The
+								motorcycle was in excellent condition, and I felt safe and
+								secure throughout my trip. The customer service was top-notch,
+								and I appreciate their attention to detail. Highly recommended!
+							</p>
+							<p class="author">
+								<strong>Michael Adeshina</strong><br />3 July 2024
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-section">
+			<div class="faq-heading">
+				<h3>Frequently Asked</h3>
+				<h1>Your Questions, Answered.</h1>
+				<p>Still have questions? <a href="#">Chat with us now</a></p>
+			</div>
+			<div class="faq-container">
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>What do I need to rent a motorbike?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>
+							You need 3 passport photograph, NIN/Voters card, Resident Nepa
+							bill, A guarantor with 2 passport photograph, NIN/Voters card.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>How old do I have to be to rent a motorbike?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>
+							In other to hire a motorcycle from To-kada Business Solution, You
+							need to be at least 18 years above.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>Can i hire a motorbike for someone else?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>
+							No, You cant, Our policy does not allow it, The person must be
+							present with the required documents to rent it themselves.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>What happens if i damage the motorbike?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>
+							Except for manufacture error, the hirer is responsible for any
+							damage that occurs during the period of the hire.
+						</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>Which payment methods do you accept?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>We accept Cash/Online transfer in Naira.</p>
+					</div>
+				</div>
+
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>
+							Will the motorcycle particulars handed to the hirer after full
+							payment?
+						</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>
+							Yes, every details regarding the motorcyle will be handed over to
+							the hirer after full payment has been completed, the hirer becomes
+							sole owner of the motorcycle.
+						</p>
+					</div>
+				</div>
+
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>Can i rent the motorcycle during hire purchase period?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+
+					<div class="faq-answer">
+						<p>
+							No, our policy do not accept that you give out a rented motorcycle
+							to a third party when you sole owner of the motorcycle yet, you
+							can do what you wish when you have made your full payment and is
+							now the sole owner of the motorcycle.
+						</p>
+					</div>
+				</div>
+
+				<div class="faq-item">
+					<div class="faq-question">
+						<h2>Are all fees included in the rental price?</h2>
+						<span class="icon"
+							><i class="fa fa-chevron-down" aria-hidden="true"></i
+						></span>
+					</div>
+					<div class="faq-answer">
+						<p>
+							Aside form fee and collection fee, Yes all fees are included in
+							the rental price
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---Footer Section------->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<h2 class="footer-title">To-Kada</h2>
+					<p class="footer-tagline">View the world, on two wheels.</p>
+					<p class="footer-location">Ibadan, Nigeria│ +234 8121104257</p>
+					<div class="footer-links">
+						<a href="#">Locations</a>
+						<a href="#">About Us</a>
+						<a href="#">Contact Us</a>
+					</div>
+					<div class="footer-socials">
+						<a href="#"
+							><i class="fa fa-facebook-square" aria-hidden="true"></i
+						></a>
+						<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"
+							><i class="fa fa-youtube-play" aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>
