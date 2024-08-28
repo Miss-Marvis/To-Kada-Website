@@ -1,3 +1,12 @@
+//SIDE BAR JAVASCRIPT
+document.querySelector('.bar-header').addEventListener('click', function () {
+	document.querySelector('.sidebar-container').classList.remove('active')
+})
+
+document.querySelector('.close').addEventListener('click', function () {
+	document.querySelector('.sidebar-container').classList.add('active')
+})
+// JAVASCRIPT RENTAL FORM
 document
 	.querySelector('.rental-form')
 	.addEventListener('submit', function (event) {
@@ -14,8 +23,9 @@ document
 	})
 
 // .......................chat  gpt...............
-
+//JAVASCRIPT SLIDER
 let currentIndex = 0
+let imageIndex = 0
 
 function showSlide(index) {
 	const slides = document.querySelectorAll('.slide')
@@ -34,15 +44,40 @@ function showSlide(index) {
 }
 
 function nextSlide() {
+	// showImageSlide(currentIndex + 1)
 	showSlide(currentIndex + 1)
 }
 
-setInterval(nextSlide, 10000) // Change slide every 10 seconds
+setInterval(nextSlide, 8000) // Change slide every 8 seconds
 
 document.addEventListener('DOMContentLoaded', () => {
+	// setInterval(nextSlide, 2000)
 	showSlide(currentIndex)
+	// showImageSlide(currentIndex)
 })
 
+function showImageSlide(index) {
+	console.log(index)
+	const slides = document.querySelectorAll('.image-slide')
+	const totalSlides = slides.length
+
+	if (index >= totalSlides) {
+		imageIndex = 0
+	} else if (index < 0) {
+		imageIndex = totalSlides - 1
+	} else {
+		imageIndex = index
+	}
+
+	const offset = -imageIndex * 100
+	document.querySelector('.tokada').style.transform = `translateX(${offset}%)`
+}
+
+//See For Yourself Javascript Section
+function nextImageSlide() {
+	showImageSlide(imageIndex + 1)
+}
+// setInterval(nextImageSlide, 2000)
 // FAQ SECTION
 
 document.addEventListener('DOMContentLoaded', function () {
