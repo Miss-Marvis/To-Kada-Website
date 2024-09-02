@@ -1,10 +1,12 @@
 //SIDE BAR JAVASCRIPT
 document.querySelector('.bar-header').addEventListener('click', function () {
-	document.querySelector('.sidebar-container').classList.remove('active')
+	document.querySelector('.sidebar-container').classList.remove('hide')
+	document.querySelector('.sidebar-container').classList.add('show')
 })
 
 document.querySelector('.close').addEventListener('click', function () {
-	document.querySelector('.sidebar-container').classList.add('active')
+	document.querySelector('.sidebar-container').classList.add('hide')
+	document.querySelector('.sidebar-container').classList.show('show')
 })
 // JAVASCRIPT RENTAL FORM
 document
@@ -77,7 +79,7 @@ function showImageSlide(index) {
 function nextImageSlide() {
 	showImageSlide(imageIndex + 1)
 }
-// setInterval(nextImageSlide, 2000)
+setInterval(nextImageSlide, 5000)
 // FAQ SECTION
 
 document.addEventListener('DOMContentLoaded', function () {
