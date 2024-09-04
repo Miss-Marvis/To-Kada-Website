@@ -30,9 +30,15 @@ body{
     position: fixed;
     right: 0;
     z-index: 1000;
-    background-color:#010911;
+    background-color:rgba(12, 0, 0);
     width: 20rem;
     height: 100vh;
+    transition: all ease-in-out 0.2s;
+}
+
+.close {
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .sidebar-container i {
@@ -49,9 +55,15 @@ body{
     height: 70vh;
 }
 
-.active {
-    display: none;
+.show {
+    /* display: none; */
+    transform: translateX(0rem);
 }
+
+.hide {
+    transform: translateX(20rem);
+}
+
 .nav-link {
     color: whitesmoke;
     text-decoration: none;
@@ -312,29 +324,38 @@ width: 200px;
 
 .tokada-wrapper {
     position: relative;
-    /* max-width: 48rem; */
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 80vw;
 }
 .tokada {
     display: flex;
-    /* justify-content: center; */
     gap: 1rem;
-    width: 100vw;
+    width: 60vw;
     margin: auto;
-    /* display: flex;
-    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
     scroll-behavior: smooth;
-    border-radius: 0.5rem;
-    border-radius: 20px; */
 }
- .image-slide {
 
-    width: 100%;
+ .image-slide {
+    /* width: 100%; */
     scroll-snap-align: start;
-    object-fit: cover;
-    /* margin: auto; */
+    margin: auto;
+    
+    
+}
+
+.image-slide img {
     border-radius: 20px;
-    /* height: 70vh; */
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    margin: auto;
+    width: 60vw;
+    
 }
 
 
