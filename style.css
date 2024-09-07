@@ -138,9 +138,9 @@ body{
   text-align:left;
   font-size: 2.3rem;
 }
-.header h1 {
+/* .header h1 {
      text-align: left; 
-}
+} */
 
 .rental-form{
     display: flex;
@@ -284,6 +284,7 @@ width: 200px;
 
 .carousel {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 .card img{
@@ -291,6 +292,7 @@ width: 200px;
     background-size:cover;
     background-position: center;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .info{
@@ -422,7 +424,8 @@ width: 200px;
     color: #555555;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 0px auto 20px auto;
 } 
 
 .author {
@@ -442,8 +445,9 @@ width: 200px;
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
-    
  }
+
+
  .safety-rules {
     width: 90vw;
     margin: auto;
@@ -708,8 +712,59 @@ margin: 0 0 30px;
     fill: #007bff;
 }
 
-@media screen and (max-width:500){
+/* @media screen and (max-width:500){
 html{
     font-size:30%;
 }
+} */
+
+@media not all and (min-width: 1200px) {
+    .header {
+        font-size: 1.7rem;
+        width: 60%;
+    }
+
+    .card img {
+        width: 20rem;
+    }
+
+    .safety-container img {
+        width: 30rem;
+        height: 90rem;
+    }
+}
+
+@media not all and (min-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 3rem;
+    }
+
+    .header {
+        text-align: center;
+        width: 80vw;
+    }
+
+    .rental-form {
+        margin-left: 0px;
+    }
+
+    .container, .content::before, .content {
+        height: 130vh;
+    }
+
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        width: 80vw;
+    }
+}
+
+@media not all and (min-width: 640px) {
+    
 }
