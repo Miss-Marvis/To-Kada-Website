@@ -755,6 +755,26 @@ html{
         height: 130vh;
     }
 
+    .tokada-wrapper {
+        width: 100vw;
+    }
+
+    .tokada {
+        width: 100vw;
+        
+    }
+
+    .image-slide {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-slide img {
+        width: 96vw;
+        margin: auto;
+    }
+
     .list-container {
         flex-direction: column-reverse;
         
